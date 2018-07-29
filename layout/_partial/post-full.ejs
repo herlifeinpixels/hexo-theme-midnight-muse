@@ -1,0 +1,21 @@
+<div class="blog-post">
+    <!-- Title -->
+    <h2 class="blog-post-title">
+        <a href="<%- config.root %><%- item.path %>">
+            <%- item.title || item.link%>
+        </a>
+    </h2>
+    <!-- Date and Time to Read -->
+    <p class="blog-post-meta">
+        <%= item.date.format(config.date_format) %>
+        <% if(item.reading_time) { %>
+            <%- item.reading_time %> minute read
+        <% } %>
+    </p>
+    <!-- Content -->
+    <%- item.content %>
+    <hr />
+    <!-- Tags and Categories links -->
+    <%- partial('post-tags', {item: item}) %>
+    <%- partial('post-categories', {item: item}) %>
+</div>
