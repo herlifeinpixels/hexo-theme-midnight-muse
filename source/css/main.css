@@ -12,7 +12,11 @@ p, span {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Abril Fatface', serif;
+	letter-spacing: .04em;
+	
 }
+
+.tracked-header { letter-spacing: .02em; }
 
 h1 {
 	display: none;
@@ -20,30 +24,5 @@ h1 {
 
 .leather { color: #C7854B; }
 .moon { font-family: 'moon', 'helvetica neue', helvetica, sans-serif; }
-
-
-/* Font Face */
-
-@font-face {
-    font-family: 'Adelle';
-    src: url('../fonts/adelle.woff2') format('font-woff2'),
-    	 url('../fonts/adelle.woff') format('font-woff');
-}
-@font-face {
-    font-family: 'Adelle';
-    src: url('../fonts/adelle-bold.woff2') format('font-woff2'),
-    	 url('../fonts/adelle-bold.woff') format('font-woff');
-    font-weight: bold;
-}
-@font-face {
-    font-family: 'Adelle';
-    src: url('../fonts/adelle-extrabold.woff2') format('font-woff2'),
-    	 url('../fonts/adelle-extrabold.woff') format('font-woff');
-    font-weight: 800;
-}
-@font-face {
-    font-family: 'Adelle';
-    src: url('../fonts/adelle-light.woff2') format('font-woff2'),
-    	 url('../fonts/adelle-light.woff') format('font-woff');
-    font-weight: lighter;
-}
+.adelle { font-family: 'Adelle', georgia, serif; }
+.abril { font-family: 'Abril', 'helvetica neue', helvetica, sans-serif; }
