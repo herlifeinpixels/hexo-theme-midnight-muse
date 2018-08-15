@@ -1,8 +1,18 @@
 <div class="blog-masthead">
-    <div class="container">
-        <nav class="blog-nav">
-            <% for (var i in theme.menu){ %>
-                <a class="blog-nav-item" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+    <div class="container ph4 ph5-ns ph7-l">
+        <nav class="blog-nav center">
+        	<% if (theme.menu.Journal) { %>
+            	<a class="blog-nav-item tc dib dim" href="<%- url_for(theme.menu.Journal) %>">Journal</a>
+            <% } %>
+            <% if (theme.menu.About) { %>
+                <a class="blog-nav-item tc dib dim" href="<%- url_for(theme.menu.About) %>">About</a>
+            <% } %>
+            <image class="nav-logo dib" src="images/logo.png" />
+            <% if (theme.menu.Projects) { %>
+            	<a class="blog-nav-item tc dib dim" href="<%- url_for(theme.menu.Projects) %>">Projects</a>
+            <% } %>
+            <% if (theme.menu.Elsewhere) { %>
+            	<a class="blog-nav-item tc dib dim" href="<%- url_for(theme.menu.Elsewhere) %>">Elsewhere</a>
             <% } %>
         </nav>
     </div>

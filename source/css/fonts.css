@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Adelle';
+    src: local('../fonts/adelle.woff2') format('woff2'),
+    	 local('../fonts/adelle.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Adelle';
+    src: local('../fonts/adelle-bold.woff2') format('woff2'),
+    	 local('../fonts/adelle-bold.woff') format('woff');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Adelle';
+    src: local('../fonts/adelle-extrabold.woff2') format('woff2'),
+    	 local('../fonts/adelle-extrabold.woff') format('woff');
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'Adelle';
+    src: local('../fonts/adelle-light.woff2') format('woff2'),
+    	 local('../fonts/adelle-light.woff') format('woff');
+    font-weight: 200;
+}
